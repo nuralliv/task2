@@ -1,0 +1,126 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poiret One", serif;
+   color: white;
+   list-style: none;
+   text-decoration: none;
+}
+
+body {
+   background-color: black;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+canvas {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+}
+
+.main-content {
+   height: 92%;
+   width: 95%;
+   border: 1px solid white;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow: hidden;
+}
+
+.row {
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+header {
+   width: 100%;
+   margin-bottom: 40px;
+}
+
+.left-content,
+.right-content {
+   position: relative;
+   z-index: 1;
+}
+
+.left-content {
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   height: 100%;
+   gap: 40px;
+}
+
+.right-content {
+   width: 70%;
+   height: 100%;
+}
+
+.navbar {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.navbar a {
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.navbar a:hover {
+   opacity: 70%;
+}
+
+h1 {
+   font-size: 50px;
+   font-weight: 100;
+}
+
+p {
+   font-size: 20px;
+}
+
+.home {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   transition: all .7s;
+}
+
+.about-me {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.about-me span {
+   font-size: 14px;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+   h1{
+      font-size: 30px;
+   }  
+}
+@media screen  and (max-width: 431px) {
+
+   .main-content{
+      
+      padding: 15px;
+   }
+}
